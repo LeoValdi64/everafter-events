@@ -355,7 +355,7 @@ export default function Home() {
             </div>
 
             <div
-              className={`grid grid-cols-1 gap-6 sm:grid-cols-3 ${
+              className={`grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ${
                 about.inView ? "animate-scale-in" : "opacity-0"
               }`}
             >
@@ -787,7 +787,7 @@ export default function Home() {
                 key={tier.name}
                 className={`relative flex flex-col rounded-2xl border p-8 transition-all hover:shadow-xl ${
                   tier.popular
-                    ? "border-gold bg-white shadow-lg shadow-gold/10 scale-[1.02]"
+                    ? "border-gold bg-white shadow-lg shadow-gold/10 lg:scale-[1.02]"
                     : "border-gold/10 bg-white/80"
                 }`}
                 style={{ animationDelay: `${i * 150}ms` }}
